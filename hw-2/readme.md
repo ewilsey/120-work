@@ -62,6 +62,10 @@ I started the week by familiarizing myself with Microsoft PowerShell, GitHub Des
 
   ![Image of my editor](2017-09-10.png)
 
+   - Here is a link to this Homework.
+    
+      [markdown readme](https://github.com/ewilsey/120-work/blob/master/hw-2/readme.md)
+
 ## Who I helped
 
   -Detailed Summary
@@ -69,4 +73,4 @@ I started the week by familiarizing myself with Microsoft PowerShell, GitHub Des
   1. I helped @StuffnThingz with a question about PowerShell.
   2. I helped @rachel-holton-burnett with a question about Atom.
 
-      - Mostly, I just helped myself because by the time I saw each of their issues and figured it out, they had too. C'est la vie. 
+      - Mostly, I just helped myself because by the time I saw each of their issues and figured it out, they had too. C'est la vie.
