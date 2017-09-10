@@ -1,10 +1,11 @@
 Name: Eric Wilsey
 Date: September 9th, 2017
 
-This is my first edited document for one of Dr. Musick's Creative Coding Media Arts course for the Fall 2017 semester at U of M.
-I think I am starting to get a hang of things. Studying and practice is key.
+An edited document for one of Dr. Musick's Creative Coding Media Arts
+course for the Fall 2017 semester at U of M.
 
-I have added this file and other files in my text editor!!!!
+I use the Power Shell terminal, the GitHub GUI, Atom text editor and
+the Git repository.
 
 
 Other stuff:
