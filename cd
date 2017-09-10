@@ -1,0 +1,11 @@
+[33mcommit 56ad94c66868f81dff6b0e4d4fa3c6d00f1dd847[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Eric Wilsey <eric.wilsey@umconnect.umt.edu>
+Date:   Sat Sep 9 22:56:24 2017 -0600
+
+    changed some things in test1.txt
+
+[33mcommit c25dbbcdeb7b80504fc37366241c4cd63153aa87[m
+Author: Eric Wilsey <eric.wilsey@umconnect.umt.edu>
+Date:   Sat Sep 9 22:28:10 2017 -0600
+
+    initial commit for our new repo. Also added the first test1.txt file.
