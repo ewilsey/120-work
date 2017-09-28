@@ -8,6 +8,6 @@ I use the Power Shell terminal, the GitHub GUI, Atom text editor and
 the Git repository.
 
 
-Other stuff:
+#### [Other stuff:]
 
-I have now made changes alongside the GitHub Desktop Demo.
+# I have now made changes alongside the GitHub Desktop Demo.
