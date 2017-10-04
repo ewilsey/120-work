@@ -1,15 +1,15 @@
-// Declare the setup function
+// Declare setup function
 function setup() {
 
-    // create a canvas 600px wide and 400px high
+    // create a canvas
     createCanvas( 900, 600 );
 
-    // color the background 'pink'
+    // color the background
     background( 'magenta' );
 }
 
 
-// Declare the draw function
+// Declare draw function
 function draw() {
 
     // tell p5 to print the text string "Hello World!"
