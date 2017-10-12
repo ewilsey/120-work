@@ -97,7 +97,7 @@ function setup() {
     arc( -0, 34, 100, 100, radians(180), radians(180) );// Collar back
     translate( 2, 14 );
     rotate( radians(0));
-    line( 48, 20, 10, 20); //left collar
+    rect( 48, 20, 10, 20); //left collar
 
     translate( -62, 0 );
     rotate( radians(0));
