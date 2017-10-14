@@ -2,26 +2,34 @@
 function setup() {
   //fill window
   createCanvas( windowWidth, windowHeight );
-  //set variables
-  var wheel_angle = 0;
-  var wheel_rotation_rate = 0;
-
-
 }
+  //set variables
+var wheel_angle = 0;
+var wheel_rotation_rate = 0;
+var grass = 0;
+var sky = 0;
+var sun = 50;
 
   //endless-loop function draw
 function draw() {
 
   //clear frame
-  background ( 'green' );
+  background ( 0, grass, 0 );
+  grass = grass + 1;
+  grass = grass % 255;
 
   //sky "background"
-  fill( 'rgb(18, 109, 208)' );
+  fill( 0, 0, sky );
   rect( 0, 0, windowWidth , 400);
+  sky = sky + 1;
+  sky = sky % 255;
 
   //Sunny Sun Sunshine
-  fill( 'yellow' );
-  ellipse( 515, 280, 50 );
+  fill( sun, sun, 0 );
+  ellipse( 515, 280, 100 );
+  sun = sun + 1;
+  sun = sun % 255;
+
 
   //hide cursor
   noCursor();
