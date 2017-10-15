@@ -14,9 +14,7 @@ var sun = 50;
 function draw() {
 
   //clear frame
-  background ( 0, grass, 0 );
-  grass = grass + 1;
-  grass = grass % 255;
+  background ( 50, 155, 30 );
 
   //sky "background"
   fill( 0, 0, sky );
@@ -34,12 +32,7 @@ function draw() {
   //hide cursor
   noCursor();
 
-  // UPDATE VALUES
-   // base wheel rotation rate on mouseY pos
-   wheel_rotation_rate  = (mouseY * 0.1) - 20;
-   //update wheel angle
-   // to equal itself plus headRotationRate
-   var wheel_angle = wheel_angle + wheel_rotation_rate;
+
 
    //show frameRate
    var fr = frameRate();
@@ -140,17 +133,28 @@ function draw() {
   fill( 'grey' );
   rect( -200 , -40 , 31, 30, 05 );
 
+
+  push();
   //back/left tire
+  translate( -70, 0 , 0 );
   fill( 'rgb(40, 40, 40)');
-  ellipse( -70 , 0, 84 , 76 ); // (pos left/right, pos up/down, width, height)
+  rotate( radians(wheel_angle) );
+  ellipse( 0, 0, 84 , 76 ); // (pos left/right, pos up/down, width, height)
+  wheel_angle = wheel_angle + 60;
+  pop();
 
   //hubcap
   fill( 'grey');
   ellipse( -70, 0, 44 , 38 );
 
+  push();
   //front/right tire
+  translate( 226, 0 , 0 );
   fill( 'rgb(40, 40, 40)');
-  ellipse( 226 , 0, 84 , 78 ); // (pos left/right, pos up/down, width, height)
+  rotate( radians(wheel_angle) );
+  ellipse( 0, 0, 84 , 78 ); // (pos left/right, pos up/down, width, height)
+  wheel_angle = wheel_angle + 60;
+  pop();
 
   //hubcap
   fill( 'grey');
