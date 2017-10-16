@@ -21,7 +21,7 @@ function draw() {
 
 
   push();   // start ellipse animation and create animated borders.
-  frameRate(5);
+  frameRate( 7 );
   noFill();
   stroke( random(255), random(255), random(255) );//rainbow borders
   rect( borderL ++, 0, borderL ++, height ); // left (pos left/right, pos up/down, width, height)
@@ -32,8 +32,10 @@ function draw() {
   stroke( random(255), random(255), random(255) );//color ellipse
 
 
-  var cSize = random( 10, width-20 ); //randomize size
-  ellipse( random(width/2), random(height/2), cSize ); //random placement + random size
+  var sSize = random( 10, width-20 ); //randomize shape Size
+  rect( random( width*2), random( height/2), sSize % 30); //random triangles + constrained size
+  //ellipse( random( width/2 ), random( height*2 ), sSize % 30); //random circles + constrained size
+
   pop(); // end ellipse animation
 
 

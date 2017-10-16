@@ -8,11 +8,11 @@ Started by experimenting with the examples given on the course website.
 
 #Steps Taken
 
-Put background in Setup. Set global variables. Implemented test variables and constraints with random colors.
+Put background in Setup. Set global variables. Implemented test variables and constraints with random colors. Created a tube of rungs, then two tubes, then randomized the colors. Went back to one tube. Then I was able to split the tube up into randomly placed rings of smaller sizes, seemed to be a better algorithm. 
 
 #Issues
 
-The windowWidth and windowHeight seem to be larger than the actual window istelf. Also the right side border seems to be dimmer than the left side. Attempted to add a thin frame to the border but really didn't confine the next lines like it did in the example, instead it created a filter effect.
+The windowWidth and windowHeight seem to be larger than the actual window itself. Also the right side border seems to be dimmer than the left side. Attempted to add a thin frame to the border but really didn't confine the next lines like it did in the example, instead it created a filter effect. Had issues getting a second random shape to come up, rect(); or triangle();.
 
 #Addional Info
 
