@@ -33,8 +33,9 @@ function draw() {
 
 
   var sSize = random( 10, width-20 ); //randomize shape Size
-  rect( random( width*2), random( height/2), sSize % 30); //random triangles + constrained size
-  //ellipse( random( width/2 ), random( height*2 ), sSize % 30); //random circles + constrained size
+  rect( random( width/2), random( height/2), sSize % 30, sSize % 30); //random triangles + constrained size
+  translate( width/2, 0 );
+  ellipse( random( width/2 ), random( height/2 ), sSize % 30); //random circles + constrained size
 
   pop(); // end ellipse animation
 
