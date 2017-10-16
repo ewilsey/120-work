@@ -4,39 +4,41 @@ var cc; //canvas color
 
 //setup
 function setup() {
-  cc=color( random(55), random(55), random(55) );// generates 1 random darkened background.
+  var rx = random(55);
+  var bx = random(55);
+  var gx = random(55);
+
+  cc=color( rx, bx, gx );// generates 1 random darkened background.
   createCanvas( windowWidth, windowHeight );
   background( cc );
 
 }
-// variables
+// Global variables ii
 
 
 // draw
 function draw() {
-  var borderL = 0;
-  var borderR = width -2;
-  var borderC = 0;
-  var borderF = height -2;
-
+  var r = random(255);//red fill color
+  var b = random(255);//blue fill color
+  var g = random(255);//green fill color
+  var r1 = random(255);//red stroke color
+  var b1 = random(255);//blue stroke color
+  var g1 = random(255);//green stroke color
 
   push();   // start ellipse animation and create animated borders.
-  frameRate( 7 );
-  noFill();
-  stroke( random(255), random(255), random(255) );//rainbow borders
-  rect( borderL ++, 0, borderL ++, height ); // left (pos left/right, pos up/down, width, height)
-  rect( borderR --, 0, borderR --, height ); // right
-  rect( 0, borderC, width, borderC ); //top
-  rect( 0, borderF, width, borderF ); //bottom
-  noFill();
-  stroke( random(255), random(255), random(255) );//color ellipse
-
+  frameRate( floor(6.998) );
+  fill( r, b, g, 128 ); // set opacity to 50%
+  stroke( r1, b1, g1 );//color ellipse
 
   var sSize = random( 10, width-20 ); //randomize shape Size
-  rect( random( width/2), random( height/2), sSize % 30, sSize % 30); //random triangles + constrained size
-  translate( width/2, 0 );
-  ellipse( random( width/2 ), random( height/2 ), sSize % 30); //random circles + constrained size
 
+  rect( random( width/2 ), random( height/2 ), sSize % 30, sSize % 30 ); //random squares + constrained size
+  translate(  width/2, 0 ); //change quadrant
+  ellipse(  random( width/2 ), random( height/2 ), sSize % 30 ); //random circles + constrained size
+  translate(  0, height/2 ); //change quadrant
+  rect( random( width/2), random( height/2 ), sSize % 30, sSize % 30 ); //random squares + constrained size
+  translate( -width/2, 0 ); //change quadrant
+  ellipse(  random( width/2 ), random( height/2 ), sSize % 30 ); //random circles + constrained size
   pop(); // end ellipse animation
 
 
