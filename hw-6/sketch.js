@@ -34,9 +34,9 @@ function draw() {
   var r2 = map( r1, 0, 255, 40, 233 );// map reds to dark reds
   var b2 = map( b1, 0, 255, 70, 245 );//map blues to dark blues
   var g2 = map( g1, 0, 255, 50, 185 );//map greens to dark greens
-  g2=g2 + 1;
-  b2 = b2 +1;
-  r2 = r2 +1;
+  g2=g2 + abs(+1*(-random(31)));
+  b2 = b2 + ceil(+1/(random(11)));
+  r2 = r2 + floor(+1*(random(22)));
 
   push();   // start ellipse animation and create animated borders.
 
@@ -50,11 +50,11 @@ function draw() {
 
   rect( random( width/2 ), random( height/2 ), sSize % 30, sSize % 30 ); //random squares + constrained size
   translate(  width/2, 0 ); //change quadrant
-  ellipse(  random( width/2 ), random( height/2 ), sSize % 30 ); //random circles + constrained size
+  ellipse(  random( width/2 ), random( height/2 ), sSize % PI*10 ); //random circles + constrained size
   translate(  0, height/2 ); //change quadrant
   rect( random( width/2), random( height/2 ), sSize % 30, sSize % 30 ); //random squares + constrained size
   translate( -width/2, 0 ); //change quadrant
-  ellipse(  random( width/2 ), random( height/2 ), sSize % 30 ); //random circles + constrained size
+  ellipse(  random( width/2 ), random( height/2 ), sSize % PI*10 ); //random circles + constrained size
 
 
 
