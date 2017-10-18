@@ -52,15 +52,15 @@ function draw() {
   rect( random( width/2 ), random( height/2 ), sSize % 30, sSize % 30 ); //random squares + constrained size
 
   translate(  width/2, 0 ); //change quadrant
-  rotate( PI / 3.0 );
+  rotate( PI / 2.7 );
   ellipse(  random( width/2 ), random( height/2 ), sSize % 30 ); //random circles + constrained size
 
   translate(  0, height/2 ); //change quadrant
-  rotate( PI * 3.0 );
+  rotate( PI * 3.3 );
   rect( random( width/2 ), random( height/2 ), sSize % 30, sSize % 30 ); //random squares + constrained size
 
   translate( -width/2, 0 ); //change quadrant
-  rotate( PI / 3.0 );
+  rotate( PI / 1.5 );
   ellipse(  random( width/2 ), random( height/2 ), sSize % 30 ); //random circles + constrained size
 
   pop(); // end ellipse animation
