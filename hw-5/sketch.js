@@ -5,7 +5,7 @@ function setup() {
 }
   //set variables
 var wheel_angle = 0;
-var wheel_rotation_rate = 0;
+
 var grass = 0;
 var sky = 0;
 var sun = 50;

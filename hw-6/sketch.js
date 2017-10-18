@@ -9,7 +9,7 @@ function setup() {
   var red = map( rx, 0, 255, 45, 85 );// map reds to dark reds
   var blu = map( bx, 0, 255, 0, 50 );//map blues to dark blues
   var grn = map( gx, 0, 255, 0, 50 );//map greens to dark greens
-  var shape_angle = 0;
+
 
   cc=color( red + 10, blu - 10, grn - 10 );// generates 1 random darkened background.
   createCanvas( windowWidth, windowHeight );
@@ -17,7 +17,7 @@ function setup() {
   noCursor();//hide cursor
 }
 // Global variables ii
-
+var shape_angle = 0;
 
 // draw
 function draw() {
@@ -40,9 +40,11 @@ function draw() {
 
   push();   // start ellipse animation and create animated borders.
 
-  frameRate( floor(6.998 * 0.666 ) );
+  frameRate( floor(6.998 * 2.666 ) );
   fill( rr, bb, gg, 128 ); // set opacity to 50%
   stroke( r2, b2, g2 );//color ellipse
+  rotate(radians(shape_angle));
+  shape_angle=shape_angle+60 * (20 -30) +39;
 
   var sSize = random( 10, width-20 ); //randomize shape Size
 
@@ -53,6 +55,7 @@ function draw() {
   rect( random( width/2), random( height/2 ), sSize % 30, sSize % 30 ); //random squares + constrained size
   translate( -width/2, 0 ); //change quadrant
   ellipse(  random( width/2 ), random( height/2 ), sSize % 30 ); //random circles + constrained size
+
 
 
   pop(); // end ellipse animation
