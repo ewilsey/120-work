@@ -1,5 +1,5 @@
-// Global variables
-var cc; //canvas color
+
+var cc; // Global variable i
 
 //setup
 function setup() {
@@ -16,8 +16,8 @@ function setup() {
   background( cc );
   noCursor();//hide cursor
 }
-// Global variables ii
-var shape_angle = 0;
+
+var shape_angle = 0;// Global variable ii
 
 // draw
 function draw() {
@@ -28,12 +28,12 @@ function draw() {
   var r1 = random(255);//red stroke color
   var b1 = random(255);//blue stroke color
   var g1 = random(255);//green stroke color
-  var rr = map( r, 0, 255, 30, 200 );// map reds to dark reds
-  var bb = map( b, 0, 255, 80, 255 );//map blues to dark blues
-  var gg = map( g, 0, 255, 150, 240 );//map greens to dark greens
-  var r2 = map( r1, 0, 255, 40, 233 );// map reds to dark reds
-  var b2 = map( b1, 0, 255, 70, 245 );//map blues to dark blues
-  var g2 = map( g1, 0, 255, 50, 185 );//map greens to dark greens
+  var rr = map( r, 0, 255, 30, 200 );// map reds to slightly lighter reds
+  var bb = map( b, 0, 255, 80, 255 );//map blues to slightly lighter blues
+  var gg = map( g, 0, 255, 150, 240 );//map greens to slightly lighter greens
+  var r2 = map( r1, 0, 255, 40, 233 );// map reds to slightly lighter reds
+  var b2 = map( b1, 0, 255, 70, 245 );//map blues to slightly lighter blues
+  var g2 = map( g1, 0, 255, 50, 185 );//map greens to slightly lighter greens
   g2=g2 + abs(+1*(-random(31)));
   b2 = b2 + ceil(+1/(random(11)));
   r2 = r2 + floor(+1*(random(22)));
@@ -56,11 +56,6 @@ function draw() {
   translate( -width/2, 0 ); //change quadrant
   ellipse(  random( width/2 ), random( height/2 ), sSize % PI*10 ); //random circles + constrained size
 
-
-
   pop(); // end ellipse animation
-
-
-
 
 }
