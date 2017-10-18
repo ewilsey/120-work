@@ -1,21 +1,20 @@
 // Global variables
 var cc; //canvas color
 
-
 //setup
 function setup() {
-
   var rx = random(255);
   var bx = random(255);
   var gx = random(255);
   var red = map( rx, 0, 255, 45, 85 );// map reds to dark reds
   var blu = map( bx, 0, 255, 0, 50 );//map blues to dark blues
   var grn = map( gx, 0, 255, 0, 50 );//map greens to dark greens
+  var shape_angle = 0;
 
   cc=color( red + 10, blu - 10, grn - 10 );// generates 1 random darkened background.
   createCanvas( windowWidth, windowHeight );
   background( cc );
-
+  noCursor();//hide cursor
 }
 // Global variables ii
 
@@ -39,8 +38,6 @@ function draw() {
   b2 = b2 +1;
   r2 = r2 +1;
 
-
-
   push();   // start ellipse animation and create animated borders.
 
   frameRate( floor(6.998 * 0.666 ) );
@@ -48,20 +45,15 @@ function draw() {
   stroke( r2, b2, g2 );//color ellipse
 
   var sSize = random( 10, width-20 ); //randomize shape Size
-  translate ( 0.5 * 2, 0.5 *2 );
-  rect( random( width/2 ), random( height/2 ), sSize % 30, sSize % 30 ); //random squares + constrained size
 
+  rect( random( width/2 ), random( height/2 ), sSize % 30, sSize % 30 ); //random squares + constrained size
   translate(  width/2, 0 ); //change quadrant
-  rotate( PI / 2.7 );
   ellipse(  random( width/2 ), random( height/2 ), sSize % 30 ); //random circles + constrained size
-
   translate(  0, height/2 ); //change quadrant
-  rotate( PI * 3.3 );
-  rect( random( width/2 ), random( height/2 ), sSize % 30, sSize % 30 ); //random squares + constrained size
-
+  rect( random( width/2), random( height/2 ), sSize % 30, sSize % 30 ); //random squares + constrained size
   translate( -width/2, 0 ); //change quadrant
-  rotate( PI / 1.5 );
   ellipse(  random( width/2 ), random( height/2 ), sSize % 30 ); //random circles + constrained size
+
 
   pop(); // end ellipse animation
 
