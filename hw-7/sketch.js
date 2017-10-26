@@ -10,10 +10,9 @@ ball.scale_x = 1;
 ball.scale_y = 1;
 
 function setup() {
-    createCanvas(windowWidth, 400);
-    background(255);
+    createCanvas(windowWidth, windowHeight);
+    background( 'rgb(124, 224, 247)' );
 }
-
 
 
 function draw() {
@@ -28,8 +27,8 @@ function draw() {
     if (ball.y >= height || ball.y <= 0) {
         ball.delta_y = -1 * ball.delta_y;
     }
-
-    fill(255);
+    noStroke();
+    fill( random(255), random(255), random(255) );
     ellipse(ball.x, ball.y, ball.width, ball.width);
 }
 

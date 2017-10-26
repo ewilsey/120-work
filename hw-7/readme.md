@@ -51,5 +51,10 @@ impact the ball's direction.
 ## How did you alter the sketch?
 
 <!--
-Please describe how and why you changed the sketch?
+
+Line 13 was changed to make the canvas full screen.
+Line 14 changed the background color to light blue using color picker.
+Line 17 was deleted to shorted the gap between setup and draw to 2 lines.
+
+
 -->
