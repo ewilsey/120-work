@@ -34,6 +34,10 @@ function draw() {
     stroke( ball.x / 4, ball.y / 4, -ball.y, ball.y / 2.98);
     fill( ball.x / 2, ball.y / 2, -ball.y, ball.y / 0.98 );
     ellipse(ball.x, ball.y, ball.width, ball.width);
+
+    stroke( ball.x / 4, ball.y / 4, -ball.y, ball.y / 2.98);
+    fill( ball.x / 2, ball.y / 2, -ball.y, ball.y / 0.98 );
+    ellipse(ball.x *2, ball.y*2, ball.width*2, ball.width*2);
 }
 
 

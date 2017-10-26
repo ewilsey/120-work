@@ -59,6 +59,7 @@ Changed stroke to change color with the fill and the transparency based on balls
 y coordinate.
 Changed colors and transparency of ellipse to change depending on the x and y
 coordinates of the ball.
-
+Added a second, bigger ball, that will leave the confines of canvas but will
+also return. This helps to break up solid colored areas a bit and adds depth.
 
 -->
