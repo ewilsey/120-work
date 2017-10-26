@@ -53,14 +53,17 @@ coordinates.
 <!--
 
 Made the canvas full screen.
+
 Changed the background color to 'black'.
+
 Shorted the gaps between functions from 3 to 2 lines.
-Changed stroke to change color and transparency based on balls
-y coordinate.
+
+Changed stroke to change color and transparency based on balls y coordinate.
+
 Removed fill creating a darker painting while highlighting colors.
+
 Added 4 more balls of varying size, color and transparency that will leave the
-confines the of canvas but will also return. This helps to break up the solid
-colored areas a bit and adds depth as well as keeping the painting constantly
-changing.
+confines of the canvas but are still themselves confined to a grid. This helps
+to break up the solid colored areas a bit keeps the painting dynamic.
 
 -->
