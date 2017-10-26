@@ -55,9 +55,10 @@ coordinates.
 Made the canvas full screen.
 Changed the background color to 'black'.
 Shorted the gaps between functions from 3 to 2 lines.
-Eliminated Stroke.
+Changed stroke to change color with the fill and the transparency based on balls
+y coordinate.
 Changed colors and transparency of ellipse to change depending on the x and y
-coordinates of the ball. 
+coordinates of the ball.
 
 
 -->
