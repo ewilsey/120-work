@@ -55,11 +55,12 @@ coordinates.
 Made the canvas full screen.
 Changed the background color to 'black'.
 Shorted the gaps between functions from 3 to 2 lines.
-Changed stroke to change color with the fill and the transparency based on balls
+Changed stroke to change color and transparency based on balls
 y coordinate.
-Changed colors and transparency of ellipse to change depending on the x and y
-coordinates of the ball.
-Added a second, bigger ball, that will leave the confines of canvas but will
-also return. This helps to break up solid colored areas a bit and adds depth.
+Removed fill creating a darker painting while highlighting colors.
+Added 4 more balls of varying size, color and transparency that will leave the
+confines the of canvas but will also return. This helps to break up the solid
+colored areas a bit and adds depth as well as keeping the painting constantly
+changing.
 
 -->

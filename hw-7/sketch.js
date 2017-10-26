@@ -31,13 +31,39 @@ function draw() {
     }
 
 
-    stroke( ball.x / 4, ball.y / 4, -ball.y, ball.y / 2.98);
-    fill( ball.x / 2, ball.y / 2, -ball.y, ball.y / 0.98 );
+    stroke( ball.x / 4, ball.y / 4, -ball.y, ball.y / 2.98 );
+    noFill();
     ellipse(ball.x, ball.y, ball.width, ball.width);
 
-    stroke( ball.x / 4, ball.y / 4, -ball.y, ball.y / 2.98);
-    fill( ball.x / 2, ball.y / 2, -ball.y, ball.y / 0.98 );
-    ellipse(ball.x *2, ball.y*2, ball.width*2, ball.width*2);
+    push();
+    translate ( -200, 0 );
+    stroke( ball.x / 4, ball.y / 4, -ball.y, ball.y / 2.98 );
+    noFill();
+    ellipse(ball.x / 0.5, ball.y / 0.5, ball.width, ball.width);
+    pop();
+
+    push();
+    translate( 100, 0 );
+    stroke( ball.x / 4, ball.y / 4, -ball.y, ball.y / 2.98 );
+    noFill();
+    ellipse(ball.x * 1.25, ball.y * 1.25, ball.width * 1.25, ball.width * 1.25 );
+    pop();
+
+    push();
+    translate( 200, 0);
+    stroke( ball.x / 4, ball.y / 4, -ball.y, ball.y / 2.98 );
+    noFill();
+    ellipse(ball.x / 0.5, ball.y / 0.5, ball.width, ball.width );
+    pop();
+
+    push();
+    translate( -100,0 );
+    stroke( ball.x / 4, ball.y / 4, -ball.y, ball.y / 2.98 );
+    noFill();
+    ellipse(ball.x * 1.5, ball.y * 1.5, ball.width * 1.5, ball.width * 1.5 );
+    pop();
+
+
 }
 
 
