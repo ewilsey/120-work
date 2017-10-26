@@ -9,13 +9,15 @@ ball.delta_y = 1;
 ball.scale_x = 1;
 ball.scale_y = 1;
 
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    background( 'rgb(124, 224, 247)' );
+    background( 'black' );
 }
 
 
 function draw() {
+
 
     ball.x += ball.delta_x * ball.scale_x;
     ball.y += ball.delta_y * ball.scale_y;
@@ -27,10 +29,13 @@ function draw() {
     if (ball.y >= height || ball.y <= 0) {
         ball.delta_y = -1 * ball.delta_y;
     }
+
+
     noStroke();
-    fill( random(255), random(255), random(255) );
+    fill( ball.x, ball.y, -ball.x, ball.y );
     ellipse(ball.x, ball.y, ball.width, ball.width);
 }
+
 
 function mousePressed() {
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);

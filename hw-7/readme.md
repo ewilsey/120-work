@@ -19,9 +19,7 @@ Why is it working the way it is?
 
 The closer you click to 0,0 the slower the ball moves -
 creating a thicker more solid line, the further away you click from 0,0 the
-faster the ball moves - creating a trailing effect. You can exploit this
-feature to alter the painting while having minimum impact on the  direction of
-the ball.
+faster the ball moves - creating a trailing effect.
 
 What does each line do?
 
@@ -39,11 +37,13 @@ line 39 ends mouse press function.
 
 How can you make the ball change direction?
 
-You can change direction by clicking directly on the ball, or by clicking on the
-canvas. Clicking on the ball has a more drastic impact on the ball's direction
-and will also impact the speed of said ball; likewise, clicking on the canvas
-has a more drastic impact on the speed of the ball but will also slightly
-impact the ball's direction.
+You can change direction by clicking directly on the canvas. Clicking towards
+the top left slows the ball down, clicking towards the bottom speeds the ball
+up. This also translates to how drastically the balls direction will change, top
+left clicks are slowest and cause slighter changes, bottom of canvas clicks are
+the most drastic on direction. Note: clicking on the same point twice will not
+change the speed or direction of the ball, the clicks must be in separate
+coordinates.
 
 -->
 
@@ -52,9 +52,12 @@ impact the ball's direction.
 
 <!--
 
-Line 13 was changed to make the canvas full screen.
-Line 14 changed the background color to light blue using color picker.
-Line 17 was deleted to shorted the gap between setup and draw to 2 lines.
+Made the canvas full screen.
+Changed the background color to 'black'.
+Shorted the gaps between functions from 3 to 2 lines.
+Eliminated Stroke.
+Changed colors and transparency of ellipse to change depending on the x and y
+coordinates of the ball. 
 
 
 -->
