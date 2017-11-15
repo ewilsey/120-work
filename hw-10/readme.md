@@ -14,7 +14,7 @@ Defined a new function: swirlA.
 Defined a second function: swirlB.
 Called SwirlA, SwirlB in draw funtion.
 Played on the p5js reference page with lines, learned how to grid out a square.
-Made it interesting.
+Made it interesting with a martini theme and a random colored background effect. 
 -->
 
 ##ISSUES

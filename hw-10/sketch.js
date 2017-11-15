@@ -49,7 +49,7 @@ function swirlA(){ //define function 1
   for (var i = 0; i < 10; i++) { //for loop
     translate( 0, numA[i] );
     stroke('black'); //outline color
-    fill('rgba( 43, 255, 48, 0.3 )'); //fill color
+    fill('rgba( 43, 255, 48, 0.5 )'); //fill color
     ellipse(i * 100 + 100, 200, numA[i] / 1.2, numA[i]); //shape with parameters
     fill('rgba( 243, 55, 48, 0.8 )'); //fill color
     rect(i * 100 + 100, 200, numA[i] / 4, numA[i] / 4, 5);
@@ -68,7 +68,7 @@ function swirlB(){ //define function 2
   for (var i = 0; i < 10; i++) { //for loop
     translate( 0, numB[i] );
     stroke('black'); //outline color
-    fill('rgba( 43, 255, 48, 0.3 )'); //fill color
+    fill('rgba( 43, 255, 48, 0.5 )'); //fill color
     ellipse(i * 100 + 100, 200, numB[i] / 1.2, numB[i]); //shape with parameters
     fill('rgba( 243, 55, 48, 0.8 )'); //fill color
     rect(i * 100 + 100, 200, numA[i] / 4, numA[i] / 4, 5);
