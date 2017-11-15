@@ -2,6 +2,8 @@ ERIC WILSEY, 51
 
 [Live Sketch Link](https://ewilsey.github.io/120-work/hw-10/)
 
+![Image of my editor](2017-11-15.png)
+
 # HW 10
 <!--
 Created an array of numbers.
@@ -14,7 +16,7 @@ Defined a new function: swirlA.
 Defined a second function: swirlB.
 Called SwirlA, SwirlB in draw funtion.
 Played on the p5js reference page with lines, learned how to grid out a square.
-Made it interesting with a martini theme and a random colored background effect. 
+Made it interesting with a martini theme and a random colored background effect.
 -->
 
 ##ISSUES
