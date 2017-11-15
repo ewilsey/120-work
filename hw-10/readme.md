@@ -2,8 +2,6 @@ ERIC WILSEY, 51
 
 [Live Sketch Link](https://ewilsey.github.io/120-work/hw-10/)
 
-![Image of my editor](2017-11-15.png)
-
 # HW 10
 <!--
 Created an array of numbers.
