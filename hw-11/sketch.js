@@ -2,7 +2,6 @@ let butterfly = [];
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    noCursor();
     let f = new Butterfly(width/2, height/2, 22);
     butterfly.push(f);
 }
@@ -20,28 +19,49 @@ function draw() {
         butterfly[i].show();
     }
 }
-
+/////////////////////////////////////////
+//      BUTTERFLY
+/////////////////////////////////////////
 class Butterfly {
+    //Build constructor method//
     constructor(x, y, r) {
         this.x = x;
         this.y = y;
         this.r = r;
     }
-
+    //Flight of the butterfly//
     move() {
         this.x = this.x + random(-5, 5);
         this.y = this.y + random(-5, 5);
     }
-
+    //Butterfly image//
     show() {
-        stroke(50);
-        strokeWeight(1);
+        noStroke();
         fill(random(255),random(255),random(255));
-        ellipse(this.x, this.y, this.r-10, this.r+10);
-        ellipse(this.x+20, this.y-15, this.r-7, this.r-5); //top right
-        ellipse(this.x-20, this.y+25, this.r-10, this.r+10); //bottom left
-        ellipse(this.x+20, this.y+25, this.r-10, this.r+10); //bottom right
-        ellipse(this.x-20, this.y-15, this.r-7, this.r-5); //top left
 
+        //body
+        push();
+        fill('black');
+        ellipse(this.x, this.y, this.r-35, this.r+210);
+        pop();
+
+        //Wings//
+        push();  //top right
+        arc(this.x+10, this.y-85, this.r+199, this.r+165, 0, HALF_PI);
+        pop();
+
+        push();  //bottom left
+        arc(this.x-10, this.y+45, this.r+145, this.r+140, -PI, -HALF_PI);
+        pop();
+
+        push(); //bottom right
+        arc(this.x+10, this.y+45, this.r+145, this.r+140, -HALF_PI, 0);
+
+        pop();
+
+        push(); //top left
+        arc(this.x-10, this.y-85, this.r+199, this.r+165, HALF_PI, PI);
+
+        pop();
     }
 }

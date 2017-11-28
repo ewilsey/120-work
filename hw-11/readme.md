@@ -20,11 +20,20 @@ colors and generally tried to make it more interesting.
 <!--
 Wanted to turn bubbles into eyes to make more interesting, having trouble
 figuring out how to have complicated shapes and how to convert old structured
-codes into object oriented codes..
+codes into object oriented codes.. Had to learn how to find the quandrants on an
+arc.
 -->
 
 #Resolve
 <!--
 Decided not to go with a shape on top of a shape (figured out how to though)
 and instead added multiple shapes to create one single image.
+-->
+
+#PI CHART
+<!--
+Top Left 1/4 -> -PI,-HALF_PI
+Bottom Left 1/4 -> HALF_PI,PI
+Bottom Right 1/4 -> 0,HALF_PI
+Top Right 1/4 -> -HALF_PI, 0
 -->
