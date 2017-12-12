@@ -25,7 +25,7 @@ function objectTimer() {
 // Object Class
 ///////////////////////////////////////////////////
 class Object {
-    constructor(x, y, r) { //contruct class
+    constructor(x, y, r) { //construct class
         this.x = x;
         this.y = y;
         this.r = r;
