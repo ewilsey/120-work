@@ -4,6 +4,7 @@ function  setup() {
   createCanvas( windowWidth,  windowHeight  ); //canvas
   let o = new Object(width/2, height/2, 10);
   object.push(o);
+  objectTimer();
 }
 
 function  draw(){
@@ -12,6 +13,12 @@ function  draw(){
        object[i].move();
        object[i].show();
    }
+}
+
+function objectTimer() {
+    let o = new Object(random(width), random(height), random(200));
+    object.push(o);
+    setTimeout(objectTimer, random(2000));
 }
 
 ///////////////////////////////////////////////////
@@ -30,9 +37,12 @@ class Object {
     }
 
     show() {
-        stroke(0,20,20);
+        frameRate(13);
+        stroke(80,random(255),80);
         strokeWeight(4);
         noFill();
         ellipse(this.x, this.y, this.r * 2);
+
+
     }
 }

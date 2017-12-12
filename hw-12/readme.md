@@ -5,7 +5,9 @@ ERIC WILSEY, 51
 ##HW-12
 <!--
 
-
+Worked alongside tutorial to gain concepts of project parameters and to refresh
+memory on what went where for OOP. Trying to change as many elements as possible
+without breaking the code or creating too many issues.
 
 -->
 
