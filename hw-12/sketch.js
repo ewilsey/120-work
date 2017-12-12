@@ -16,27 +16,27 @@ function  draw(){
 }
 
 function objectTimer() {
-    let o = new Object(random(width), random(height), random(200));
+    let o = new Object(random(width), random(height), random(200)); //randomize
     object.push(o);
-    setTimeout(objectTimer, random(2000));
+    setTimeout(objectTimer, random(2000)); //create new object every x-ms
 }
 
 ///////////////////////////////////////////////////
 // Object Class
 ///////////////////////////////////////////////////
 class Object {
-    constructor(x, y, r) {
+    constructor(x, y, r) { //contruct class
         this.x = x;
         this.y = y;
         this.r = r;
     }
 
-    move() {
+    move() { //object movement
         this.x = this.x + random(-13, 13);
         this.y = this.y + random(-13, 13);
     }
 
-    show() {
+    show() { //object
         frameRate(13);
         stroke(80,random(255),80);
         strokeWeight(4);

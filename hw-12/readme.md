@@ -15,13 +15,15 @@ without breaking the code or creating too many issues.
 #Issues
 <!--
 
-
+Briefly broke code while learning setTimeout() with a simple spelling error.
 
 -->
 
 #Resolve
 <!--
 
+Noticed that object parameter symbols in functions blocks did not match between
+setup and objectTimer. Correcting mistake resolved issue.
 
 
 -->
