@@ -40,7 +40,7 @@ function  draw(){
    }
 
    let d = dist(this.x, this.y, this.x2, this.y2); //this function not working not sure why
-   if (d < this.r + this.r2) {
+   if (d < this.r + this.r2) { //do I need to change these where ? OR where?
      this.color = 'red';
      this.color2 = 'blue';
      this.color3 = 'green';
