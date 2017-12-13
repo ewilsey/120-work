@@ -6,11 +6,16 @@ class Object {
         this.x = x;
         this.y = y;
         this.r = r;
+        this.color = 'yellow'
     }
 
-    clicked(){
-      let d = dist(mouseX,mouseY,this.x,this.y);
-      text("Click!", mouseX, mouseY);
+    clicked(x,y){
+      let d = dist(x, y, this.x, this.y);
+      if (d < this.r) {
+            this.color = 'blue'
+            text("FUCK",this.x,this.y);
+      }
+
     }
 
     move() { //object movement
@@ -22,8 +27,8 @@ class Object {
         frameRate(1);
         stroke(80,random(255),80);
         strokeWeight(4 - random(-3,3));
-        fill('rgb(235, 217, 155)');
-        rect(this.x, this.y, this.r + random(-100, 10), this.r + random(-100, 10));
+        fill(this.color);
+        rect(this.x, this.y, this.r *2, this.r + random(-100, 10));
 
     }
 

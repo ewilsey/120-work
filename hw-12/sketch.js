@@ -1,28 +1,26 @@
 let object  = [];
 
 function  setup() {
-  createCanvas( windowWidth,  windowHeight  ); //canvas
-  let o = new Object(width/2, height/2, 10);
+  createCanvas( windowWidth - 10,  windowHeight - 10 ); //canvas
+  for(let i = 0; i < 5; i ++) {
+  let x = random(width);
+  let y = random(height);
+  let r = random(10,50)
+  let o = new Object(x,y,r);
   object.push(o);
-//  objectTimer();
+  }
 }
 
 function mousePressed(){
-
-  text("Clicked!", mouseX, mouseY )
-  //object.clicked();
-
+  for (let i = 0; i < object.length; i++) {
+       object[i].clicked(mouseX,mouseY);
+    }
 }
 
 function  draw(){
-  background('white'); //background color
+  background('blue'); //background color
   for (let i = 0; i < object.length; i++) {
        object[i].move();
        object[i].show();
    }
 }
-// function objectTimer() {
-//    let o = new Object(random(width), random(height), random(200)); //randomize
-//     object.push(o);
-//     setTimeout(objectTimer, random(8000)); //create new object every x-ms
-// }
