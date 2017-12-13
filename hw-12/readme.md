@@ -20,8 +20,11 @@ adds text so far. Will experiment further.
 
 Discovered that when I added another shape into the same class that I could
 create an illusion of one object turning into another. For example: clicking the
- white square will create a white blubble in its place. Adding the text element
- creates a game like feature where changing one element is awarded 100 pts. 
+white square will create a white bubble while removing square. Adding the text
+element creates a game like feature where changing one element is awarded 100
+pts.
+
+
 
 -->
 
@@ -55,6 +58,9 @@ Updated index to reflect new object.js file.
 Removed alpha from rectangle parameter that would allow changing into an
 ellipse, then lowered the frameRate and changed the other two parameters for H
 and W to be more drastic allowing for a more animated effect.
+
+Created new object2.js file and added to index, mirrored object.js with new
+object2 identities. Now have 2 working objects.
 
 
 -->
