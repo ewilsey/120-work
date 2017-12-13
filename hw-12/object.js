@@ -12,6 +12,7 @@ class Object {
         this.color4 = 'rgba(0, 0, 0, 0)';
     }
 
+
     clicked(x,y){
       let d = dist(x, y, this.x, this.y);
       if (d < this.r) {

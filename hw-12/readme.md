@@ -44,6 +44,9 @@ Am having difficulty getting a second object to appear and interact with the
 first object. I thought objectTimer would create new objects, but they don't
 appear to act in the way I want them to.
 
+Still cannot get object to interact with object 2. Might have to let it go as is
+and come back to it later. 
+
 -->
 
 #Resolve
