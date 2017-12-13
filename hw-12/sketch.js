@@ -18,5 +18,5 @@ function  draw(){
 function objectTimer() {
     let o = new Object(random(width), random(height), random(200)); //randomize
     object.push(o);
-    setTimeout(objectTimer, random(2000)); //create new object every x-ms
+    setTimeout(objectTimer, random(8000)); //create new object every x-ms
 }

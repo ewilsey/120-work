@@ -14,11 +14,11 @@ class Object {
     }
 
     show() { //object
-        frameRate(13);
+        frameRate(7);
         stroke(80,random(255),80);
-        strokeWeight(4);
-        noFill();
-        ellipse(this.x, this.y, this.r * 2);
+        strokeWeight(4 - random(-3,3));
+        fill('rgb(235, 217, 155)');
+        rect(this.x, this.y, this.r + random(-100, 10), this.r + random(-100, 10));
 
 
     }
