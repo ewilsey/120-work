@@ -2,10 +2,11 @@ let object  = [];
 
 function  setup() {
   createCanvas( windowWidth - 10,  windowHeight - 10 ); //canvas
-  for(let i = 0; i < 5; i ++) {
+  textSize(35);
+  for(let i = 0; i < 22; i ++) {
   let x = random(width);
   let y = random(height);
-  let r = random(10,50)
+  let r = random(10,50);
   let o = new Object(x,y,r);
   object.push(o);
   }
@@ -18,7 +19,7 @@ function mousePressed(){
 }
 
 function  draw(){
-  background('blue'); //background color
+  background('black'); //background color
   for (let i = 0; i < object.length; i++) {
        object[i].move();
        object[i].show();

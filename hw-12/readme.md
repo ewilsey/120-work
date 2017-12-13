@@ -15,8 +15,13 @@ Figured out how to make an object change sizes and stroke while moving around -
 kind of creates a talking mouth illusion, might exploit this feature to create
 a talking head of some sort.
 
-Figured out how to get mousePressed to work the way I wanted, changes color and adds text so far. Will
-experiment further.
+Figured out how to get mousePressed to work the way I wanted, changes color and
+adds text so far. Will experiment further.
+
+Discovered that when I added another shape into the same class that I could
+create an illusion of one object turning into another. For example: clicking the
+ white square will create a white blubble in its place. Adding the text element
+ creates a game like feature where changing one element is awarded 100 pts. 
 
 -->
 
@@ -32,8 +37,9 @@ Broke code when trying to change shape from square to circle randomly. Assuming
 that the code was too complicated, taking up too much memory or hitting some
 unexpected zeroes.
 
-Am having difficulty getting a second object to appear and interact with the first object. I thought
-objectTimer would create new objects, but they don't appear to act in the way I want them to.
+Am having difficulty getting a second object to appear and interact with the
+first object. I thought objectTimer would create new objects, but they don't
+appear to act in the way I want them to.
 
 -->
 

@@ -6,14 +6,21 @@ class Object {
         this.x = x;
         this.y = y;
         this.r = r;
-        this.color = 'yellow'
+        this.color = 'white';
+        this.color2 = 'rgba(0, 0, 0, 0)';
+        this.color3 = 'rgba(0, 0, 0, 0)';
+        this.color4 = 'rgba(0, 0, 0, 0)';
     }
 
     clicked(x,y){
       let d = dist(x, y, this.x, this.y);
       if (d < this.r) {
-            this.color = 'blue'
-            text("FUCK",this.x,this.y);
+            this.color = 'rgba(0, 0, 0, 0)';
+            this.color2 = 'white';
+            this.color3 = 'yellow';
+            this.color4 = 'purple';
+            fill(this.color3).stroke(this.color4).strokeWeight(2);
+            text("100",this.x,this.y);
       }
 
     }
@@ -24,11 +31,22 @@ class Object {
     }
 
     show() { //object
-        frameRate(1);
-        stroke(80,random(255),80);
-        strokeWeight(4 - random(-3,3));
+
+        push();
+        noStroke();
+        fill(this.color2);
+        ellipse(this.x/2 ,this.y/2,this.r*2,this.r*2);
+        push();
+        fill(this.color3).stroke(this.color4).strokeWeight(2);
+        text("100",this.x/2,this.y/2);
+        pop();
+        pop();
+
+        frameRate(5);
+        noStroke();
         fill(this.color);
-        rect(this.x, this.y, this.r *2, this.r + random(-100, 10));
+        rect(this.x, this.y, this.r, this.r + random(-100, 10));
+
 
     }
 
