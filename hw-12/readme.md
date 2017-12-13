@@ -27,7 +27,10 @@ Broke code when moving object to its own js file, forgot to update index.
 
 Broke code when trying to change shape from square to circle randomly. Assuming
 that the code was too complicated, taking up too much memory or hitting some
-unexpected zeroes. 
+unexpected zeroes.
+
+Am having difficulty getting a second object to appear and interact with the first object. I thought
+objectTimer would create new objects, but they don't appear to act in the way I want them to. 
 
 -->
 
